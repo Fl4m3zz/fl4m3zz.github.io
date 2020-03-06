@@ -1,0 +1,55 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>PCC United FC</title>
+    </head>
+    <body>
+        <div class="top">
+            <p id="name">PCC UNITED FC</p>
+            <p id="top-description">Pres is The Best!</p>
+            <img src="pres_logo.jpg" alt="PCC logo">
+        </div>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html" class="active">Join Us!</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>REGISTRATION</h1> 
+            <p>Enter your information below and an email will be sent to you with more information.</p>
+            <form action="register.php" autocomplete="off">
+                <p style="margin-bottom: 10px;">First Name: </p>
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <p style="margin-bottom: 10px;">Surname:</p>
+                <input type="text" name="lastname" placeholder="Surname" required>
+                <p style="margin-bottom: 10px;">Email:</p> 
+                <input type="text" name="email" placeholder="username@example.com" size="30" required>
+                <p style="margin-bottom: 10px;">Age:</p>
+                <input type="text" name="email" placeholder="18" size="3" required>
+                <button type="button" onclick="alert('Thank You For Registering, we look forward to working with you!')" id="submit-button">Submit</button>
+            </form>
+        </div>
+        <!--<div class="bottom">
+            <p>Done By: Matthew Capsan</p>
+        </div>-->
+        <script>
+            window.onscroll = function() {fn()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function fn() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

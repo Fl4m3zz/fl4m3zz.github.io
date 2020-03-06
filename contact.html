@@ -1,0 +1,52 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>PCC United FC</title>
+    </head>
+    <body>
+        <div class="top">
+            <p id="name">PCC UNITED FC</p>
+            <p id="top-description">Pres is The Best!</p>
+            <img src="pres_logo.jpg" alt="PCC logo">
+        </div>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Us!</a></li>
+                <li><a href="contact.html" class="active">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div style="text-align: center;">
+                <h1>CONTACTS</h1>
+                <p>Coach Allen: 868-123-4567</p> 
+                <p>Coach Harry: 868-765-4321</p>
+                <p>Championship Team Captain, Joe: 868-321-7654</p>
+                <p>NB: Contact can be made with the Football Club by visiting Presentation College, Chaguanas and leaving a message.</p>
+                <p>Done By: </p>
+                <p>Shemar Maundy, Zachary Chariandy, Joel Sammons, Kevin Liu and Matthew Capsan</p>
+            </div>
+        </div>
+        
+        <!--<div class="bottom">
+            <p>Done By:</p>
+        </div>-->
+        <script>
+            window.onscroll = function() {fn()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function fn() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

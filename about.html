@@ -1,0 +1,52 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>PCC United FC</title>
+    </head>
+    <body>
+        <div class="top">
+            <p id="name">PCC UNITED FC</p>
+            <p id="top-description">Pres is The Best!</p>
+            <img src="pres_logo.jpg" alt="PCC logo">
+        </div>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="join.html">Join Us!</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>WHO ARE WE?</h1>
+            <p>We are a group of young men and women whose mission is to see the students of <a href="https://pcc.edu.tt/">Presentation College, Chaguanas</a>
+                achieve their full potential with the help of our careful nuturing administered by coach Allen and Harry who share their passion of the sport, <a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a>
+            </p>
+            <h1>WHERE ARE WE?</h1>
+            <p>Almost all the members of PCC United FC are current/past students of PCC. However, it is not abnormal to see
+                students of other institutions attending meetings and training sessions as many have a passion for cricket
+            </p>
+            <h1>MEETINGS: TIMES AND VENUES</h1>
+            <p>All meetings are scheduled either after school or during the weekend, but there is no fixed dates for practice.</p>
+        </div>
+        <!---<div class="bottom">
+            <p>Done By: Matthew Capsan</p>
+        </div>-->
+        <script>
+            window.onscroll = function() {fn()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function fn() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
